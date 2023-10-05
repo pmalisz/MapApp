@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC680A6F2ACE8E0100AC0F98 /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */; };
-		AC680A712ACE8E0100AC0F98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A702ACE8E0100AC0F98 /* ContentView.swift */; };
+		AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A702ACE8E0100AC0F98 /* BuildingView.swift */; };
 		AC680A732ACE8E0200AC0F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC680A722ACE8E0200AC0F98 /* Assets.xcassets */; };
 		AC680A772ACE8E0200AC0F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC680A762ACE8E0200AC0F98 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		AC680A6B2ACE8E0100AC0F98 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
-		AC680A702ACE8E0100AC0F98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC680A702ACE8E0100AC0F98 /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
 		AC680A722ACE8E0200AC0F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC680A742ACE8E0200AC0F98 /* MapApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapApp.entitlements; sourceTree = "<group>"; };
 		AC680A762ACE8E0200AC0F98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */,
-				AC680A702ACE8E0100AC0F98 /* ContentView.swift */,
+				AC680A702ACE8E0100AC0F98 /* BuildingView.swift */,
 				AC680A722ACE8E0200AC0F98 /* Assets.xcassets */,
 				AC680A742ACE8E0200AC0F98 /* MapApp.entitlements */,
 				AC680A752ACE8E0200AC0F98 /* Preview Content */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC680A712ACE8E0100AC0F98 /* ContentView.swift in Sources */,
+				AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */,
 				AC680A6F2ACE8E0100AC0F98 /* MapAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
