@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3D4D582AD7D13B0063040D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D4D572AD7D13B0063040D /* Building.swift */; };
 		AC680A6F2ACE8E0100AC0F98 /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */; };
 		AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A702ACE8E0100AC0F98 /* BuildingView.swift */; };
 		AC680A732ACE8E0200AC0F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC680A722ACE8E0200AC0F98 /* Assets.xcassets */; };
 		AC680A772ACE8E0200AC0F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC680A762ACE8E0200AC0F98 /* Preview Assets.xcassets */; };
+		ACC680CB2AE1059100DCA8E2 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC680CA2AE1059100DCA8E2 /* Theme.swift */; };
+		ACC680CE2AE1064700DCA8E2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC680CD2AE1064700DCA8E2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC3D4D572AD7D13B0063040D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		AC680A6B2ACE8E0100AC0F98 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
 		AC680A702ACE8E0100AC0F98 /* BuildingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingView.swift; sourceTree = "<group>"; };
 		AC680A722ACE8E0200AC0F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC680A742ACE8E0200AC0F98 /* MapApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MapApp.entitlements; sourceTree = "<group>"; };
 		AC680A762ACE8E0200AC0F98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACC680CA2AE1059100DCA8E2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		ACC680CD2AE1064700DCA8E2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3D4D562AD7D1200063040D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC3D4D572AD7D13B0063040D /* Building.swift */,
+				ACC680CA2AE1059100DCA8E2 /* Theme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AC680A622ACE8E0000AC0F98 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +67,9 @@
 		AC680A6D2ACE8E0100AC0F98 /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				ACC680CC2AE1062800DCA8E2 /* Views */,
+				AC3D4D562AD7D1200063040D /* Models */,
 				AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */,
-				AC680A702ACE8E0100AC0F98 /* BuildingView.swift */,
 				AC680A722ACE8E0200AC0F98 /* Assets.xcassets */,
 				AC680A742ACE8E0200AC0F98 /* MapApp.entitlements */,
 				AC680A752ACE8E0200AC0F98 /* Preview Content */,
@@ -67,6 +83,15 @@
 				AC680A762ACE8E0200AC0F98 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACC680CC2AE1062800DCA8E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC680A702ACE8E0100AC0F98 /* BuildingView.swift */,
+				ACC680CD2AE1064700DCA8E2 /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */,
+				ACC680CB2AE1059100DCA8E2 /* Theme.swift in Sources */,
+				AC3D4D582AD7D13B0063040D /* Building.swift in Sources */,
 				AC680A6F2ACE8E0100AC0F98 /* MapAppApp.swift in Sources */,
+				ACC680CE2AE1064700DCA8E2 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,10 +318,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AGH.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,10 +355,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AGH.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
