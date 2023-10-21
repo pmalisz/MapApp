@@ -19,6 +19,7 @@ struct Building {
     var shape: MKPolygon
     var type: String
     var theme: Theme
+    var favourite: Bool
 }
 
 
@@ -53,7 +54,8 @@ extension Building {
                                                50.0685726)
                  ], count: 9),
                  type: "university",
-                 theme: .yellow
+                 theme: .yellow,
+                 favourite: false
                 ),
         Building(symbol: "D-11",
                  name: "Budynek D-11",
@@ -79,7 +81,8 @@ extension Building {
                                                50.0672801)
                  ], count: 7),
                  type: "university",
-                 theme: .orange
+                 theme: .orange,
+                 favourite: true
                 ),
         Building(symbol: "P-A3-A4",
                  name: "Budynek P-A3-A4",
@@ -105,7 +108,8 @@ extension Building {
                                                50.0655267)
                  ], count: 7),
                  type: "",
-                 theme: .purple
+                 theme: .purple,
+                 favourite: false
                 )
     ]
 }

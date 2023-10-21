@@ -12,8 +12,13 @@ struct CardView: View {
     let building: Building
     var body: some View {
         VStack(alignment: .leading){
-            Text("Budynek \(building.symbol)")
-                .font(.headline)
+            HStack{
+                Text("Budynek \(building.symbol)")
+                    .font(.headline)
+                Spacer()
+                Image(systemName: building.favourite ? "heart.fill" : "heart")
+                    .foregroundColor(.red)
+            }
             Spacer()
             HStack {
                 Text(building.name)
@@ -21,12 +26,10 @@ struct CardView: View {
                 
                 if(building.wifi){
                     Image(systemName: "wifi")
-                        .imageScale(.large)
                 }
                 
                 if(building.handycap != Handycap.no){
                     Image(systemName: "figure.roll")
-                        .imageScale(.large)
                         .foregroundColor(building.handycap == Handycap.yes ? .black : .gray)
                 }
             }.font(.caption)

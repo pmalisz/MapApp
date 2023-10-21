@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FE0A2892AE3F9C700BB2711 /* BuildingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE0A2882AE3F9C700BB2711 /* BuildingsView.swift */; };
 		AC3D4D582AD7D13B0063040D /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D4D572AD7D13B0063040D /* Building.swift */; };
 		AC680A6F2ACE8E0100AC0F98 /* MapAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */; };
 		AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC680A702ACE8E0100AC0F98 /* BuildingView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6FE0A2882AE3F9C700BB2711 /* BuildingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingsView.swift; sourceTree = "<group>"; };
 		AC3D4D572AD7D13B0063040D /* Building.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		AC680A6B2ACE8E0100AC0F98 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC680A6E2ACE8E0100AC0F98 /* MapAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppApp.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				AC680A702ACE8E0100AC0F98 /* BuildingView.swift */,
 				ACC680CD2AE1064700DCA8E2 /* CardView.swift */,
+				6FE0A2882AE3F9C700BB2711 /* BuildingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FE0A2892AE3F9C700BB2711 /* BuildingsView.swift in Sources */,
 				AC680A712ACE8E0100AC0F98 /* BuildingView.swift in Sources */,
 				ACC680CB2AE1059100DCA8E2 /* Theme.swift in Sources */,
 				AC3D4D582AD7D13B0063040D /* Building.swift in Sources */,

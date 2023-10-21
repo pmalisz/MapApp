@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct MapAppApp: App {
+    @State private var buildings = Building.sampleData
+    
     var body: some Scene {
         WindowGroup {
-            BuildingView()
+            BuildingsView(buildings: $buildings)
         }
     }
 }

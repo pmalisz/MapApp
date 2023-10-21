@@ -8,40 +8,56 @@
 import SwiftUI
 
 struct BuildingView: View {
+    @Binding var building: Building
+    
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
                 Image("AGH")
                     .resizable()
                     .aspectRatio(CGSize(width:2, height: 1), contentMode: .fit)
-                    .padding(.horizontal)
-                VStack(alignment: .leading) {
-                    Text("Budynek C-2")
+                
+                HStack {
+                    Text("Budynek \(building.symbol)")
                         .font(.title)
-                    Text("Oficjalna nazwa")
-                        .font(.title2)
-                    HStack {
-                        Text("Adres")
-                            .font(.title3)
-                        Spacer()
-                        Image(systemName: "wifi")
-                        Image(systemName: "figure.roll")
-                    }.padding(.bottom)
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus auctor mauris. Vestibulum pellentesque, nisl elementum varius porta, enim magna fermentum nulla, quis auctor ipsum sapien ut metus. In vitae nunc vel urna viverra fringilla a ut augue. Donec eu pharetra felis. Integer scelerisque metus sem, in dictum ligula fringilla imperdiet. Quisque ut congue lorem. Curabitur nec diam sed tellus cursus auctor. Praesent pulvinar urna non mi vestibulum iaculis. Cras et tortor in dolor semper tincidunt eu eu nunc. Cras arcu mi, blandit id egestas ac, ornare id lorem. Donec mattis lacus et libero auctor, ut commodo diam maximus. Proin eu quam vitae nunc viverra efficitur.")
-                        .font(.body)
                     Spacer()
-                    VStack(alignment: .center){
-                        Image("Map")
-                            .resizable()
-                            .aspectRatio(CGSize(width:1, height: 1), contentMode: .fill)
+                    Image(systemName: building.favourite ? "heart.fill" : "heart")
+                        .foregroundColor(.red)
+                        .onTapGesture {
+                            building.favourite.toggle()
+                        }
+                }
+                Text(building.name)
+                    .font(.title2)
+                
+                HStack {
+                    Text(building.address)
+                        .font(.title3)
+                    Spacer()
+                    if(building.wifi) {
+                        Image(systemName: "wifi")
                     }
-                    .frame(width: 200.0, height: 200.0)
-                }.padding()
-            }
+                    
+                    if(building.handycap != Handycap.no){
+                        Image(systemName: "figure.roll")
+                            .foregroundColor(building.handycap == Handycap.yes ? .black : .gray)
+                    }
+                }.padding(.bottom)
+                
+                Text(building.description)
+                    .font(.body)
+                Spacer()
+                Image("Map")
+                    .resizable()
+                    .aspectRatio(1/1, contentMode: .fit)
+                    .frame(minWidth: 200, maxHeight: 200)
+            }.padding()
         }
     }
 }
 
 #Preview {
-    BuildingView()
+    NavigationStack {
+        BuildingView(building: .constant(Building.sampleData[0]))
+    }
 }
